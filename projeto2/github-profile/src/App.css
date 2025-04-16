@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D1117;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.github-icon {
+  font-size: 40px;
+  color: white;
+}
+
+.title {
+  font-size: 28px;
+  color: white;
+}
+
+.light {
+  font-weight: 300;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  outline: none;
+  width: 250px;
+}
+
+.search-box button {
+  background-color: #0074f8;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Feedbacks */
+.loading,
+.error {
+  color: white;
+  margin-top: 10px;
+}
+
+.error {
+  color: #ff4d4d;
+}
+
+/* Profile */
+.profile {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.profile h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.clear-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
